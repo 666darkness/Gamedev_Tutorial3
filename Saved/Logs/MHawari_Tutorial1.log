@@ -1,0 +1,680 @@
+﻿Log file open, 10/11/17 16:36:50
+LogInit:Display: Running engine for game: MHawari_Tutorial1
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(493600949) SRandInit(493600949).
+LogTaskGraph: Started task graph with 5 named threads and 6 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.062193
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.16-CL-3466753
+LogInit: Engine Version: 4.16.1-3466753+++UE4+Release-4.16
+LogInit: Compatible Engine Version: 4.16.0-3452394+++UE4+Release-4.16
+LogInit: Net CL: 3452394
+LogDevObjectVersion: Number of dev versions registered: 16
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 9
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 17
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 23
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 15
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 4
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 1
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 3
+LogInit: Compiled (64-bit): May 31 2017 02:03:30
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.16
+LogInit: Command line: 
+LogInit: Base directory: C:/Unreal Engine 4/UE_4.16/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.10.11-09.36.50:733][  0]LogInit: Selected Device Profile: [Windows]
+[2017.10.11-09.36.50:733][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.10.11-09.36.50:762][  0]LogInit: Computer: CSLAB-2601-27-2
+[2017.10.11-09.36.50:762][  0]LogInit: User: mhawari41
+[2017.10.11-09.36.50:762][  0]LogInit: CPU Page size=4096, Cores=2
+[2017.10.11-09.36.50:762][  0]LogInit: High frequency timer resolution =3.604980 MHz
+[2017.10.11-09.36.50:762][  0]LogMemory: Memory total: Physical=11.9GB (12GB approx)
+[2017.10.11-09.36.50:762][  0]LogMemory: Platform Memory Stats for Windows
+[2017.10.11-09.36.50:762][  0]LogMemory: Process Physical Memory: 272.57 MB used, 272.57 MB peak
+[2017.10.11-09.36.50:762][  0]LogMemory: Process Virtual Memory: 260.50 MB used, 260.50 MB peak
+[2017.10.11-09.36.50:762][  0]LogMemory: Physical Memory: 4625.15 MB used,  7533.55 MB free, 12158.70 MB total
+[2017.10.11-09.36.50:762][  0]LogMemory: Virtual Memory: 614.78 MB used,  7533.55 MB free, 8388608.00 MB total
+[2017.10.11-09.36.50:963][  0]LogInit: Using OS detected language (en-US).
+[2017.10.11-09.36.50:963][  0]LogInit: Using OS detected locale (en-US).
+[2017.10.11-09.36.50:967][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2017.10.11-09.36.51:870][  0]LogD3D11RHI: D3D11 adapters:
+[2017.10.11-09.36.51:885][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 750 Ti' (Feature Level 11_0)
+[2017.10.11-09.36.51:885][  0]LogD3D11RHI:       1992/0/5823 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.10.11-09.36.51:885][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.10.11-09.36.51:889][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.10.11-09.36.51:889][  0]LogD3D11RHI:     GPU DeviceId: 0x1380 (for the marketing name, search the web for "GPU Device Id")
+[2017.10.11-09.36.51:889][  0]LogWindows: EnumDisplayDevices:
+[2017.10.11-09.36.51:889][  0]LogWindows:    0. 'NVIDIA GeForce GTX 750 Ti' (P:1 D:1)
+[2017.10.11-09.36.51:889][  0]LogWindows:    1. 'NVIDIA GeForce GTX 750 Ti' (P:0 D:0)
+[2017.10.11-09.36.51:889][  0]LogWindows:    2. 'NVIDIA GeForce GTX 750 Ti' (P:0 D:0)
+[2017.10.11-09.36.51:890][  0]LogWindows:    3. 'NVIDIA GeForce GTX 750 Ti' (P:0 D:0)
+[2017.10.11-09.36.51:890][  0]LogWindows:    4. 'RDPDD Chained DD' (P:0 D:0)
+[2017.10.11-09.36.51:890][  0]LogWindows:    5. 'RDP Encoder Mirror Driver' (P:0 D:0)
+[2017.10.11-09.36.51:890][  0]LogWindows:    6. 'RDP Reflector Display Driver' (P:0 D:0)
+[2017.10.11-09.36.51:890][  0]LogWindows:    7. 'PCI GDIHOOK5' (P:0 D:0)
+[2017.10.11-09.36.51:890][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2017.10.11-09.36.51:890][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 750 Ti
+[2017.10.11-09.36.51:890][  0]LogD3D11RHI:   Driver Version: 376.53 (internal:21.21.13.7653, unified:376.53)
+[2017.10.11-09.36.51:890][  0]LogD3D11RHI:      Driver Date: 12-29-2016
+[2017.10.11-09.36.51:890][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.10.11-09.36.51:899][  0]LogD3D11RHI: Async texture creation enabled
+[2017.10.11-09.36.51:913][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2017.10.11-09.36.51:959][  0]LogShaderCompilers: Guid format shader working directory is -54 characters bigger than the processId version (../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Intermediate/Shaders/WorkingDirectory/1748/).
+[2017.10.11-09.36.51:959][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/m.hawari41/AppData/Local/Temp/UnrealShaderWorkingDir/1A142403435E2582C2CFAAACA0A9A18A/'.
+[2017.10.11-09.36.51:959][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.10.11-09.36.52:870][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.10.11-09.36.52:907][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.10.11-09.36.52:945][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.10.11-09.36.52:982][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.10.11-09.36.53:020][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.10.11-09.36.53:058][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.10.11-09.36.53:113][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.10.11-09.36.53:152][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.10.11-09.36.53:193][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.10.11-09.36.53:229][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.10.11-09.36.53:266][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.10.11-09.36.53:303][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.10.11-09.36.53:339][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.10.11-09.36.53:376][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.10.11-09.36.53:413][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.10.11-09.36.53:488][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.10.11-09.36.53:488][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.10.11-09.36.53:514][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.10.11-09.36.53:588][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.10.11-09.36.53:614][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.10.11-09.36.53:665][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.10.11-09.36.53:855][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.10.11-09.36.53:919][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.10.11-09.36.53:958][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.10.11-09.36.53:958][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.10.11-09.36.54:283][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.10.11-09.36.54:364][  0]LogDerivedDataCache: Loaded boot cache 0.08s 90MB C:/Users/m.hawari41/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.10.11-09.36.54:364][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/m.hawari41/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc
+[2017.10.11-09.36.54:364][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.10.11-09.36.54:364][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.10.11-09.36.54:364][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.10.11-09.36.54:364][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.10.11-09.36.54:380][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.10.11-09.36.54:391][  0]LogDerivedDataCache: Using Local data cache path C:/Users/m.hawari41/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.10.11-09.36.54:399][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2017.10.11-09.36.54:400][  0]LogSlate: Using Freetype 2.6.0
+[2017.10.11-09.36.54:400][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.10.11-09.36.54:400][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.10.11-09.36.54:764][  0]LogInit: Selected Device Profile: [Windows]
+[2017.10.11-09.36.54:769][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.10.11-09.36.54:972][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.10.11-09.36.55:003][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.10.11-09.36.55:035][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.10.11-09.36.55:035][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.10.11-09.36.55:035][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.10.11-09.36.55:667][  0]LogNetVersion: MHawari_Tutorial1 , NetCL: 3452394, EngineNetVer: 2, GameNetVer: 0 (Checksum: 369159)
+[2017.10.11-09.36.55:721][  0]LogAssetRegistry: FAssetRegistry took 0.0241 seconds to start up
+[2017.10.11-09.36.55:782][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 2 prioritized culture(s) in 0.045850 seconds
+[2017.10.11-09.36.55:791][  0]LogUObjectArray: 34194 objects as part of root set at end of initial load.
+[2017.10.11-09.36.55:791][  0]LogUObjectAllocator: 7260424 out of 0 bytes used by permanent object pool.
+[2017.10.11-09.36.55:791][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.10.11-09.36.55:874][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.10.11-09.36.58:275][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.10.11-09.36.58:313][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.10.11-09.36.58:759][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.10.11-09.36.59:124][  0]SourceControl: Info Source control is disabled
+[2017.10.11-09.36.59:182][  0]SourceControl: Info Source control is disabled
+[2017.10.11-09.36.59:226][  0]SourceControl: Info Source control is disabled
+[2017.10.11-09.36.59:270][  0]SourceControl: Info Source control is disabled
+[2017.10.11-09.36.59:799][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2017.10.11-09.37.00:211][  0]LogEngine: Initializing Engine...
+[2017.10.11-09.37.00:211][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.10.11-09.37.00:400][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.10.11-09.37.00:400][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.10.11-09.37.00:492][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.10.11-09.37.00:502][  0]LogInit: XAudio2 using 'ASUS VS197-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.10.11-09.37.00:521][  0]LogInit: FAudioDevice initialized.
+[2017.10.11-09.37.00:560][  0]LogDerivedDataCache: Saved boot cache 0.04s 90MB C:/Users/m.hawari41/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.10.11-09.37.00:567][  0]LogInit: Texture streaming: Enabled
+[2017.10.11-09.37.00:630][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.10.11-09.37.00:808][  0]LogInit: Transaction tracking system initialized
+[2017.10.11-09.37.01:027][  0]BlueprintLog: New page: Editor Load
+[2017.10.11-09.37.01:681][  0]LocalizationService: Info Localization service is disabled
+[2017.10.11-09.37.02:247][  0]LogConsoleResponse:Display: 
+[2017.10.11-09.37.02:433][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.10.11-09.37.02:433][  0]LogCook:Display: Mobile HDR setting 1
+[2017.10.11-09.37.03:270][  0]LogFileCache: Scanning file cache for directory 'C:/Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/' took 0.02s
+[2017.10.11-09.37.03:270][  0]SourceControl: Info Source control is disabled
+[2017.10.11-09.37.03:270][  0]LightingResults: New page: Lighting Build
+[2017.10.11-09.37.03:299][  0]MapCheck: New page: Map Check
+[2017.10.11-09.37.03:299][  0]LightingResults: New page: Lighting Build
+[2017.10.11-09.37.04:323][  0]LogTexture:Display: Building textures: spritesheet-32x-trans (BGRA8, 1054X1054)
+[2017.10.11-09.37.04:491][  0]LogAIModule: Creating AISystem for world 2DSideScrollerExampleMap
+[2017.10.11-09.37.04:521][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.10.11-09.37.04:570][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.10.11-09.37.04:604][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 33.841ms to complete.
+[2017.10.11-09.37.04:604][  0]LogFileHelpers: Loading map '2DSideScrollerExampleMap' took 1.335
+[2017.10.11-09.37.05:295][  0]LogCollectionManager: Loaded 0 collections in 0.002094 seconds
+[2017.10.11-09.37.06:385][  0]LogFileCache: Scanning file cache for directory 'C:/Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/Collections/' took 0.01s
+[2017.10.11-09.37.06:385][  0]LogFileCache: Scanning file cache for directory 'C:/Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/Developers/mhawari41/Collections/' took 0.01s
+[2017.10.11-09.37.06:386][  0]LogFileCache: Scanning file cache for directory 'C:/Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/Collections/' took 0.01s
+[2017.10.11-09.37.06:386][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000004 seconds
+[2017.10.11-09.37.06:496][  0]LogContentBrowser: Native class hierarchy populated in 0.0483 seconds. Added 2329 classes and 491 folders.
+[2017.10.11-09.37.06:633][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0007 seconds. Added 0 classes and 0 folders.
+[2017.10.11-09.37.09:202][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0020 seconds. Added 0 classes and 0 folders.
+[2017.10.11-09.37.09:605][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0021 seconds. Added 1 classes and 2 folders.
+[2017.10.11-09.37.09:915][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.10.11-09.37.09:985][  0]LogSlate: Took 0.000379 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.10.11-09.37.09:991][  0]LogSlate: Took 0.000332 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.10.11-09.37.10:049][  0]LogSlate: Took 0.014689 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.10.11-09.37.10:645][  0]LogRenderer: Reallocating scene render targets to support 856x372 NumSamples 1 (Frame:1).
+[2017.10.11-09.37.11:076][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0007 seconds. Added 1 classes and 2 folders.
+[2017.10.11-09.37.11:077][  0]LogLoad: (Engine Initialization) Total time: 21.89 seconds
+[2017.10.11-09.37.11:077][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.56 seconds
+[2017.10.11-09.37.11:077][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.10.11-09.37.11:077][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.10.11-09.37.11:086][  0]LogOcInput: OculusInput pre-init called
+[2017.10.11-09.37.11:086][  0]LogHMD: Starting GearVRController plugin
+[2017.10.11-09.37.11:207][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.10.11-09.37.11:282][  0]LogSlate: Took 0.000577 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.10.11-09.37.11:491][  1]LogAssetRegistry: Asset discovery search completed in 15.7905 seconds
+[2017.10.11-09.37.11:497][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2017.10.11-09.37.11:497][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000044 seconds (updated 0 objects)
+[2017.10.11-09.37.15:170][337]LogEditorViewport: Clicking on Actor (context menu): PaperSpriteActor (Ledge_14)
+[2017.10.11-09.37.16:101][337]LogEditorViewport: Clicking on Actor (context menu): PaperSpriteActor (Background_Sprite)
+[2017.10.11-09.37.17:715][459]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Background_Sprite)
+[2017.10.11-09.37.45:101][629]LogSlate: Took 0.000139 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.10.11-09.37.45:121][629]LightingResults: New page: Lighting Build
+[2017.10.11-09.37.45:121][629]LoadErrors: New page: Loading map: 2DSideScrollerExampleMap.umap
+[2017.10.11-09.37.45:126][629]MapCheck: New page: Map Check
+[2017.10.11-09.37.45:126][629]LightingResults: New page: Lighting Build
+[2017.10.11-09.37.45:152][629]LogAIModule: Creating AISystem for world 2DSideScrollerExampleMap
+[2017.10.11-09.37.45:159][629]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.10.11-09.37.45:190][629]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.10.11-09.37.45:226][629]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 35.364ms to complete.
+[2017.10.11-09.37.45:226][629]LogFileHelpers: Loading map '2DSideScrollerExampleMap' took 0.129
+[2017.10.11-09.37.53:822][653]LogEditorViewport: Clicking on Actor (context menu): PaperSpriteActor (Background_Sprite)
+[2017.10.11-09.37.55:077][795]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Background_Sprite)
+[2017.10.11-09.37.57:044][ 23]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Background_Sprite)
+[2017.10.11-09.38.03:212][741]Cmd: MAP LOAD FILE="../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/world2.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.10.11-09.38.03:218][741]LightingResults: New page: Lighting Build
+[2017.10.11-09.38.03:219][741]LoadErrors: New page: Loading map: world2.umap
+[2017.10.11-09.38.03:220][741]MapCheck: New page: Map Check
+[2017.10.11-09.38.03:220][741]LightingResults: New page: Lighting Build
+[2017.10.11-09.38.03:281][741]LogAIModule: Creating AISystem for world world2
+[2017.10.11-09.38.03:292][741]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.10.11-09.38.03:347][741]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.10.11-09.38.03:388][741]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 40.266ms to complete.
+[2017.10.11-09.38.03:388][741]LogFileHelpers: Loading map 'world2' took 0.177
+[2017.10.11-09.38.17:266][378]LogEditorViewport: Clicking Background
+[2017.10.11-09.38.28:852][751]LogEditorViewport: Clicking on Actor (context menu): PaperTileMapActor (spritesheet-32x-trans_TileMap)
+[2017.10.11-09.38.33:408][276]LogEditorViewport: Clicking Background
+[2017.10.11-09.38.36:003][585]LogTemp: Repeting last play command: Selected Viewport
+[2017.10.11-09.38.36:232][585]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.10.11-09.38.36:257][585]PIE: New page: PIE session: world2 (Oct 11, 2017, 11:38:36 PM)
+[2017.10.11-09.38.36:258][585]LogPlayLevel: Creating play world package: /Game/2DSideScrollerBP/UEDPIE_0_world2
+[2017.10.11-09.38.36:291][585]LogPlayLevel: PIE: StaticDuplicateObject took: (0.033374s)
+[2017.10.11-09.38.36:292][585]LogAIModule: Creating AISystem for world world2
+[2017.10.11-09.38.36:293][585]LogPlayLevel: PIE: World Init took: (0.001926s)
+[2017.10.11-09.38.36:293][585]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/2DSideScrollerBP/world2.world2 to /Game/2DSideScrollerBP/UEDPIE_0_world2.world2 (0.035946s)
+[2017.10.11-09.38.36:357][585]LogInit: XAudio2 using 'ASUS VS197-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.10.11-09.38.36:364][585]LogInit: FAudioDevice initialized.
+[2017.10.11-09.38.36:418][585]LogLoad: Game class is 'MyGameMode_C'
+[2017.10.11-09.38.36:468][585]LogWorld: Bringing World /Game/2DSideScrollerBP/UEDPIE_0_world2.world2 up for play (max tick rate 0) at 2017.10.11-16.38.36
+[2017.10.11-09.38.36:495][585]LogWorld: Bringing up level for play took: 0.033117
+[2017.10.11-09.38.36:647][585]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0008 seconds. Added 11 classes and 0 folders.
+[2017.10.11-09.38.36:692][585]PIE: Info Play in editor start time for /Game/2DSideScrollerBP/UEDPIE_0_world2 -0.215
+[2017.10.11-09.38.50:439][208]LogEditorViewport: Clicking on Actor (LMB): PaperTileMapActor (spritesheet-32x-trans_TileMap)
+[2017.10.11-09.38.51:815][369]LogEditorViewport: Clicking on Actor (LMB): TrapBP_C (TrapBP)
+[2017.10.11-09.38.51:911][370]LogEditorViewport: Clicking on Component (LMB): PaperSpriteComponent (TrapSprite)
+[2017.10.11-09.39.01:010][453]Cmd: TRANSACTION UNDO
+[2017.10.11-09.39.01:010][453]LogEditorTransaction: Undo Move Components
+[2017.10.11-09.39.01:033][453]LogSlate: Took 0.000162 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.10.11-09.39.01:330][481]Cmd: TRANSACTION UNDO
+[2017.10.11-09.39.01:330][481]LogEditorTransaction: Undo Move Components
+[2017.10.11-09.39.02:070][557]Cmd: TRANSACTION UNDO
+[2017.10.11-09.39.02:070][557]LogEditorTransaction: Undo Move Components
+[2017.10.11-09.39.08:391][282]LogEditorViewport: Clicking Background
+[2017.10.11-09.39.10:074][483]LogEditorViewport: Clicking on Actor (LMB): TrapBP_C (TrapBP)
+[2017.10.11-09.39.37:231][737]LogEditorViewport: Clicking on Actor (context menu): PaperTileMapActor (spritesheet-32x-trans_TileMap)
+[2017.10.11-09.39.39:316][979]LogEditorViewport: Clicking Background
+[2017.10.11-09.39.41:429][231]LogEditorViewport: Clicking on Actor (LMB): TrapBP_C (TrapBP)
+[2017.10.11-09.39.52:704][571]LogEditorViewport: Clicking on Actor (LMB): TrapBP_C (TrapBP)
+[2017.10.11-09.39.52:795][580]LogEditorViewport: Clicking on Component (LMB): PaperSpriteComponent (TrapSprite)
+[2017.10.11-09.39.56:821][ 59]Cmd: TRANSACTION UNDO
+[2017.10.11-09.39.56:821][ 59]LogEditorTransaction: Undo Move Components
+[2017.10.11-09.40.14:887][127]LogEditorViewport: Clicking on Component (LMB): PaperSpriteComponent (TrapSprite)
+[2017.10.11-09.40.19:076][627]Cmd: TRANSACTION UNDO
+[2017.10.11-09.40.19:076][627]LogEditorTransaction: Undo Move Components
+[2017.10.11-09.40.20:092][727]Cmd: TRANSACTION UNDO
+[2017.10.11-09.40.20:092][727]LogEditorTransaction: Undo Clicking on Components
+[2017.10.11-09.40.57:799][210]LogEditorViewport: Clicking on Component (LMB): PaperSpriteComponent (TrapSprite)
+[2017.10.11-09.41.07:867][415]LogTemp: Repeting last play command: Selected Viewport
+[2017.10.11-09.41.07:882][415]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.10.11-09.41.07:882][415]PIE: New page: PIE session: world2 (Oct 11, 2017, 11:41:07 PM)
+[2017.10.11-09.41.07:882][415]LogPlayLevel: Creating play world package: /Game/2DSideScrollerBP/UEDPIE_0_world2
+[2017.10.11-09.41.07:883][415]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001334s)
+[2017.10.11-09.41.07:885][415]LogAIModule: Creating AISystem for world world2
+[2017.10.11-09.41.07:885][415]LogPlayLevel: PIE: World Init took: (0.001654s)
+[2017.10.11-09.41.07:885][415]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/2DSideScrollerBP/world2.world2 to /Game/2DSideScrollerBP/UEDPIE_0_world2.world2 (0.003190s)
+[2017.10.11-09.41.07:905][415]LogInit: XAudio2 using 'ASUS VS197-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.10.11-09.41.07:909][415]LogInit: FAudioDevice initialized.
+[2017.10.11-09.41.07:941][415]LogLoad: Game class is 'MyGameMode_C'
+[2017.10.11-09.41.07:943][415]LogWorld: Bringing World /Game/2DSideScrollerBP/UEDPIE_0_world2.world2 up for play (max tick rate 0) at 2017.10.11-16.41.07
+[2017.10.11-09.41.07:944][415]LogWorld: Bringing up level for play took: 0.003099
+[2017.10.11-09.41.07:946][415]PIE: Info Play in editor start time for /Game/2DSideScrollerBP/UEDPIE_0_world2 1.037
+[2017.10.11-09.41.14:913][248]LogBlueprintUserMessages: [TrapBP_75] true
+[2017.10.11-09.43.35:981][152]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0008 seconds. Added 112 classes and 0 folders.
+[2017.10.11-09.43.36:784][152]LogSlate: Took 0.000143 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.10.11-09.43.50:275][601]LogMetaData: Removing '/Game/2DSideScrollerBP/Blueprints/MovingPlatformBP.MovingPlatformBP:UserConstructionScript.K2Node_FunctionEntry_0' ref from Metadata '/Game/2DSideScrollerBP/Blueprints/NewBlueprint.PackageMetaData'
+[2017.10.11-09.43.50:275][601]LogMetaData: Removing '/Game/2DSideScrollerBP/Blueprints/MovingPlatformBP.SKEL_MovingPlatformBP_C' ref from Metadata '/Game/2DSideScrollerBP/Blueprints/NewBlueprint.PackageMetaData'
+[2017.10.11-09.43.50:275][601]LogMetaData: Removing '/Game/2DSideScrollerBP/Blueprints/MovingPlatformBP.MovingPlatformBP_C' ref from Metadata '/Game/2DSideScrollerBP/Blueprints/NewBlueprint.PackageMetaData'
+[2017.10.11-09.43.50:275][601]LogMetaData: Removing '/Game/2DSideScrollerBP/Blueprints/MovingPlatformBP.MovingPlatformBP:EventGraph.K2Node_Event_0' ref from Metadata '/Game/2DSideScrollerBP/Blueprints/NewBlueprint.PackageMetaData'
+[2017.10.11-09.43.50:275][601]LogMetaData: Removing '/Game/2DSideScrollerBP/Blueprints/MovingPlatformBP.MovingPlatformBP:EventGraph.K2Node_Event_1' ref from Metadata '/Game/2DSideScrollerBP/Blueprints/NewBlueprint.PackageMetaData'
+[2017.10.11-09.43.50:275][601]LogMetaData: Removing '/Game/2DSideScrollerBP/Blueprints/MovingPlatformBP.MovingPlatformBP:EventGraph.K2Node_Event_2' ref from Metadata '/Game/2DSideScrollerBP/Blueprints/NewBlueprint.PackageMetaData'
+[2017.10.11-09.43.50:344][601]LogSavePackage: Save=40.02ms
+[2017.10.11-09.43.50:344][601]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/MovingPlatformBPD7142C2345C9B838804EC29EDA1F8CF9.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/MovingPlatformBP.uasset'
+[2017.10.11-09.43.50:349][601]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/MovingPlatformBP.uasset
+[2017.10.11-09.44.26:032][608]LogRenderer: Reallocating scene render targets to support 856x588 NumSamples 1 (Frame:269).
+[2017.10.11-09.44.32:960][775]LogSlate: Took 0.015215 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.10.11-09.47.12:383][ 96]LogEditorTransaction: Undo Add Component
+[2017.10.11-09.51.17:997][393]LogSlate: Took 0.022332 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
+[2017.10.11-09.51.53:003][276]LogSavePackage: Save=11.88ms
+[2017.10.11-09.51.53:003][276]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/MovingPlatformBP0F5438694F1FA47DE52F9A8C123EDE11.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/MovingPlatformBP.uasset'
+[2017.10.11-09.51.53:006][276]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/MovingPlatformBP.uasset
+[2017.10.11-09.51.53:980][376]BlueprintLog: New page: Compile MovingPlatformBP
+[2017.10.11-09.52.01:589][827]LogSavePackage: Save=13.03ms
+[2017.10.11-09.52.01:589][827]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/MovingPlatformBP4BD59AE94F100EDDE9D68C881A87D231.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/MovingPlatformBP.uasset'
+[2017.10.11-09.52.01:592][827]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/MovingPlatformBP.uasset
+[2017.10.11-09.52.20:381][448]LogSlate: Took 0.015982 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.10.11-09.52.59:129][994]LogSavePackage: Save=16.03ms
+[2017.10.11-09.52.59:129][994]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/world2_Auto150F57816409A7C3E9FEEBC9643777B75.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/Autosaves/Game/2DSideScrollerBP/world2_Auto1.umap'
+[2017.10.11-09.52.59:130][994]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/Autosaves/Game/2DSideScrollerBP/world2_Auto1.umap
+[2017.10.11-09.52.59:132][994]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/2DSideScrollerBP/world2' took 0.071
+[2017.10.11-09.52.59:132][994]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.071
+[2017.10.11-09.52.59:135][994]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/2DSideScrollerBP/Blueprints/MovingPlatformBP] ([1] browsable assets)...
+[2017.10.11-09.52.59:135][994]OBJ SavePackage: Finished generating thumbnails for package [/Game/2DSideScrollerBP/Blueprints/MovingPlatformBP]
+[2017.10.11-09.52.59:150][994]LogSavePackage: Save=13.49ms
+[2017.10.11-09.52.59:150][994]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/MovingPlatformBP_Auto1E113F2CA43CD5ADFD8C5E5AEA18F29D6.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/Autosaves/Game/2DSideScrollerBP/Blueprints/MovingPlatformBP_Auto1.uasset'
+[2017.10.11-09.52.59:151][994]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/Autosaves/Game/2DSideScrollerBP/Blueprints/MovingPlatformBP_Auto1.uasset
+[2017.10.11-09.52.59:151][994]LogFileHelpers: Auto-saving content packages took 0.017
+[2017.10.11-10.00.19:992][441]LogEditorTransaction: Undo Move Node
+[2017.10.11-10.00.20:317][466]LogEditorTransaction: Undo Move Node
+[2017.10.11-10.00.20:634][489]LogEditorTransaction: Undo Move Node
+[2017.10.11-10.00.20:946][518]LogEditorTransaction: Undo Move Nodes
+[2017.10.11-10.00.21:361][557]LogEditorTransaction: Undo Move Nodes
+[2017.10.11-10.00.21:768][596]LogEditorTransaction: Undo Move Node
+[2017.10.11-10.00.22:197][639]LogEditorTransaction: Undo Add Node
+[2017.10.11-10.00.55:523][193]LogEditorTransaction: Undo Add Node
+[2017.10.11-10.01.11:522][820]LogEditorTransaction: Undo Add Node
+[2017.10.11-10.06.23:977][892]BlueprintLog: New page: Collapse to Macro
+[2017.10.11-10.07.13:419][611]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/2DSideScrollerBP/world2' took 0.035
+[2017.10.11-10.07.13:420][611]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/2DSideScrollerBP/Blueprints/MovingPlatformBP] ([1] browsable assets)...
+[2017.10.11-10.07.13:420][611]OBJ SavePackage: Finished generating thumbnails for package [/Game/2DSideScrollerBP/Blueprints/MovingPlatformBP]
+[2017.10.11-10.07.13:455][611]LogSavePackage: Save=27.41ms
+[2017.10.11-10.07.13:455][611]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/MovingPlatformBP_Auto2CCE588B34B097A36FB7C5FBD032126F3.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/Autosaves/Game/2DSideScrollerBP/Blueprints/MovingPlatformBP_Auto2.uasset'
+[2017.10.11-10.07.13:456][611]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/Autosaves/Game/2DSideScrollerBP/Blueprints/MovingPlatformBP_Auto2.uasset
+[2017.10.11-10.07.13:456][611]LogFileHelpers: Auto-saving content packages took 0.037
+[2017.10.11-10.08.03:798][776]BlueprintLog: New page: Collapse to Macro
+[2017.10.11-10.09.12:950][870]BlueprintLog: New page: Compile MovingPlatformBP
+[2017.10.11-10.09.20:073][552]LogSavePackage: Save=30.54ms
+[2017.10.11-10.09.20:073][552]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/MovingPlatformBP223D368940D89E44E6441F881F485C79.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/MovingPlatformBP.uasset'
+[2017.10.11-10.09.20:078][552]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/MovingPlatformBP.uasset
+[2017.10.11-10.09.39:796][821]LogEditorTransaction: Undo Add Node
+[2017.10.11-10.11.14:851][247]LogEditorTransaction: Undo Add Node
+[2017.10.11-10.12.52:579][595]LogEditorTransaction: Undo Move Node
+[2017.10.11-10.12.53:362][658]LogEditorTransaction: Undo Add Node
+[2017.10.11-10.13.02:702][558]LogEditorTransaction: Undo Move Node
+[2017.10.11-10.13.03:411][613]LogEditorTransaction: Undo Add Node
+[2017.10.11-10.14.00:429][732]LogEditorTransaction: Undo Delete current selection
+[2017.10.11-10.14.05:770][238]LogEditorTransaction: Undo Collapses selected nodes into a single node
+[2017.10.11-10.14.43:051][902]BlueprintLog: New page: Collapse to Macro
+[2017.10.11-10.16.03:421][572]LogEditorTransaction: Undo Move Node
+[2017.10.11-10.16.04:337][646]LogEditorTransaction: Undo Add Node
+[2017.10.11-10.16.34:280][295]LogSavePackage: Save=36.32ms
+[2017.10.11-10.16.34:280][295]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/MovingPlatformBP2EC2D81B474FBD404E068BA61432A826.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/MovingPlatformBP.uasset'
+[2017.10.11-10.16.34:282][295]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/MovingPlatformBP.uasset
+[2017.10.11-10.16.59:615][236]LogSavePackage: Save=34.42ms
+[2017.10.11-10.16.59:615][236]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/MovingPlatformBPCE3E2CB545E3B70B8B86B2BFEF238806.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/MovingPlatformBP.uasset'
+[2017.10.11-10.16.59:617][236]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/MovingPlatformBP.uasset
+[2017.10.11-10.17.18:984][ 23]LogSavePackage: Save=34.32ms
+[2017.10.11-10.17.18:984][ 23]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/MovingPlatformBP0DE1E5F74D17CC5779B8C086C74E32A6.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/MovingPlatformBP.uasset'
+[2017.10.11-10.17.18:987][ 23]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/MovingPlatformBP.uasset
+[2017.10.11-10.18.25:344][521]LogEditorTransaction: Undo Add Node
+[2017.10.11-10.19.15:672][809]LogSavePackage: Save=35.88ms
+[2017.10.11-10.19.15:673][809]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/MovingPlatformBP391C426D46E146BAD54F2AAD830669F1.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/MovingPlatformBP.uasset'
+[2017.10.11-10.19.15:675][809]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/MovingPlatformBP.uasset
+[2017.10.11-10.21.29:008][691]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/2DSideScrollerBP/world2' took 0.049
+[2017.10.11-10.21.29:010][691]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/2DSideScrollerBP/Blueprints/MovingPlatformBP] ([1] browsable assets)...
+[2017.10.11-10.21.29:010][691]OBJ SavePackage: Finished generating thumbnails for package [/Game/2DSideScrollerBP/Blueprints/MovingPlatformBP]
+[2017.10.11-10.21.29:050][691]LogSavePackage: Save=37.07ms
+[2017.10.11-10.21.29:050][691]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/MovingPlatformBP_Auto348E1F63F40280533078C2281A4470DBA.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/Autosaves/Game/2DSideScrollerBP/Blueprints/MovingPlatformBP_Auto3.uasset'
+[2017.10.11-10.21.29:051][691]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/Autosaves/Game/2DSideScrollerBP/Blueprints/MovingPlatformBP_Auto3.uasset
+[2017.10.11-10.21.29:051][691]LogFileHelpers: Auto-saving content packages took 0.042
+[2017.10.11-10.23.22:675][267]LogSavePackage: Save=45.63ms
+[2017.10.11-10.23.22:675][267]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/MovingPlatformBPF33BF4E74680AE382A6C4CBC857BB313.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/MovingPlatformBP.uasset'
+[2017.10.11-10.23.22:678][267]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/MovingPlatformBP.uasset
+[2017.10.11-10.24.14:546][521]LogEditorTransaction: Undo Add Node
+[2017.10.11-10.24.22:164][130]LogEditorTransaction: Undo Add Node
+[2017.10.11-10.25.05:297][565]LogEditorTransaction: Undo Add Node
+[2017.10.11-10.26.13:617][538]LogEditorTransaction: Undo Add Node
+[2017.10.11-10.26.36:004][366]LogEditorTransaction: Undo Add Node
+[2017.10.11-10.27.49:361][572]LogSavePackage: Save=43.70ms
+[2017.10.11-10.27.49:361][572]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/MovingPlatformBP64197912414E9E585BFFF08133909C05.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/MovingPlatformBP.uasset'
+[2017.10.11-10.27.49:364][572]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/MovingPlatformBP.uasset
+[2017.10.11-10.28.15:694][960]Cmd: TRANSACTION UNDO
+[2017.10.11-10.28.15:694][960]LogEditorTransaction: Undo Scale Actors
+[2017.10.11-10.28.16:014][990]Cmd: TRANSACTION UNDO
+[2017.10.11-10.28.16:014][990]LogEditorTransaction: Undo Scale Actors
+[2017.10.11-10.28.18:698][298]Cmd: TRANSACTION UNDO
+[2017.10.11-10.28.18:698][298]LogEditorTransaction: Undo Scale Actors
+[2017.10.11-10.28.21:694][654]Cmd: TRANSACTION UNDO
+[2017.10.11-10.28.21:694][654]LogEditorTransaction: Undo Scale Actors
+[2017.10.11-10.28.21:943][683]Cmd: TRANSACTION UNDO
+[2017.10.11-10.28.21:943][683]LogEditorTransaction: Undo Scale Actors
+[2017.10.11-10.28.28:060][412]LogEditorViewport: Clicking Background
+[2017.10.11-10.28.40:874][339]LogTemp: Repeting last play command: Selected Viewport
+[2017.10.11-10.28.40:892][339]BlueprintLog: New page: Pre-Play auto-recompile
+[2017.10.11-10.28.40:892][339]LogPlayLevel: [PlayLevel] Compiling MovingPlatformBP before play...
+[2017.10.11-10.28.41:067][339]LogPlayLevel: PlayLevel: Blueprint regeneration took 174 ms (1 blueprints)
+[2017.10.11-10.28.41:067][339]PIE: New page: PIE session: world2 (Oct 12, 2017, 12:28:41 AM)
+[2017.10.11-10.28.41:067][339]LogPlayLevel: Creating play world package: /Game/2DSideScrollerBP/UEDPIE_0_world2
+[2017.10.11-10.28.41:068][339]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001203s)
+[2017.10.11-10.28.41:069][339]LogAIModule: Creating AISystem for world world2
+[2017.10.11-10.28.41:069][339]LogPlayLevel: PIE: World Init took: (0.000598s)
+[2017.10.11-10.28.41:069][339]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/2DSideScrollerBP/world2.world2 to /Game/2DSideScrollerBP/UEDPIE_0_world2.world2 (0.001960s)
+[2017.10.11-10.28.41:095][339]LogInit: XAudio2 using 'ASUS VS197-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.10.11-10.28.41:100][339]LogInit: FAudioDevice initialized.
+[2017.10.11-10.28.41:127][339]LogLoad: Game class is 'MyGameMode_C'
+[2017.10.11-10.28.41:129][339]LogWorld: Bringing World /Game/2DSideScrollerBP/UEDPIE_0_world2.world2 up for play (max tick rate 0) at 2017.10.11-17.28.41
+[2017.10.11-10.28.41:130][339]LogWorld: Bringing up level for play took: 0.003107
+[2017.10.11-10.28.41:132][339]PIE: Info Play in editor start time for /Game/2DSideScrollerBP/UEDPIE_0_world2 0.254
+[2017.10.11-10.28.45:571][854]LogBlueprintUserMessages: [TrapBP_75] true
+[2017.10.11-10.28.51:924][609]LogEditorViewport: Clicking on Actor (LMB): MovingPlatformBP_C (MovingPlatformBP)
+[2017.10.11-10.28.56:238][124]LogEditorViewport: Clicking on Actor (LMB): TrapBP_C (TrapBP)
+[2017.10.11-10.28.58:211][358]LogEditorViewport: Clicking on Actor (LMB): MovingPlatformBP_C (MovingPlatformBP)
+[2017.10.11-10.29.02:581][879]LogEditorViewport: Clicking Background
+[2017.10.11-10.29.05:037][164]LogSavePackage: Save=18.46ms
+[2017.10.11-10.29.05:037][164]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/world28858938A4DF994A26EABA9B069AA563C.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/world2.umap'
+[2017.10.11-10.29.05:039][164]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/world2.umap
+[2017.10.11-10.29.05:597][229]LogTemp: Repeting last play command: Selected Viewport
+[2017.10.11-10.29.05:606][229]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.10.11-10.29.05:606][229]PIE: New page: PIE session: world2 (Oct 12, 2017, 12:29:05 AM)
+[2017.10.11-10.29.05:606][229]LogPlayLevel: Creating play world package: /Game/2DSideScrollerBP/UEDPIE_0_world2
+[2017.10.11-10.29.05:607][229]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001141s)
+[2017.10.11-10.29.05:608][229]LogAIModule: Creating AISystem for world world2
+[2017.10.11-10.29.05:608][229]LogPlayLevel: PIE: World Init took: (0.000515s)
+[2017.10.11-10.29.05:608][229]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/2DSideScrollerBP/world2.world2 to /Game/2DSideScrollerBP/UEDPIE_0_world2.world2 (0.001810s)
+[2017.10.11-10.29.05:636][229]LogInit: XAudio2 using 'ASUS VS197-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.10.11-10.29.05:640][229]LogInit: FAudioDevice initialized.
+[2017.10.11-10.29.05:670][229]LogLoad: Game class is 'MyGameMode_C'
+[2017.10.11-10.29.05:672][229]LogWorld: Bringing World /Game/2DSideScrollerBP/UEDPIE_0_world2.world2 up for play (max tick rate 0) at 2017.10.11-17.29.05
+[2017.10.11-10.29.05:673][229]LogWorld: Bringing up level for play took: 0.002840
+[2017.10.11-10.29.05:674][229]PIE: Info Play in editor start time for /Game/2DSideScrollerBP/UEDPIE_0_world2 0.796
+[2017.10.11-10.30.11:882][252]LogSavePackage: Save=46.77ms
+[2017.10.11-10.30.11:882][252]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/MovingPlatformBPA968F4B6496A1CC78FE094A82BB24205.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/MovingPlatformBP.uasset'
+[2017.10.11-10.30.11:885][252]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/MovingPlatformBP.uasset
+[2017.10.11-10.30.12:689][347]BlueprintLog: New page: Compile MovingPlatformBP
+[2017.10.11-10.30.16:334][761]LogTemp: Repeting last play command: Selected Viewport
+[2017.10.11-10.30.16:347][761]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.10.11-10.30.16:347][761]PIE: New page: PIE session: world2 (Oct 12, 2017, 12:30:16 AM)
+[2017.10.11-10.30.16:347][761]LogPlayLevel: Creating play world package: /Game/2DSideScrollerBP/UEDPIE_0_world2
+[2017.10.11-10.30.16:348][761]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001158s)
+[2017.10.11-10.30.16:349][761]LogAIModule: Creating AISystem for world world2
+[2017.10.11-10.30.16:349][761]LogPlayLevel: PIE: World Init took: (0.000651s)
+[2017.10.11-10.30.16:349][761]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/2DSideScrollerBP/world2.world2 to /Game/2DSideScrollerBP/UEDPIE_0_world2.world2 (0.001966s)
+[2017.10.11-10.30.16:376][761]LogInit: XAudio2 using 'ASUS VS197-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.10.11-10.30.16:380][761]LogInit: FAudioDevice initialized.
+[2017.10.11-10.30.16:410][761]LogLoad: Game class is 'MyGameMode_C'
+[2017.10.11-10.30.16:412][761]LogWorld: Bringing World /Game/2DSideScrollerBP/UEDPIE_0_world2.world2 up for play (max tick rate 0) at 2017.10.11-17.30.16
+[2017.10.11-10.30.16:413][761]LogWorld: Bringing up level for play took: 0.002961
+[2017.10.11-10.30.16:415][761]PIE: Info Play in editor start time for /Game/2DSideScrollerBP/UEDPIE_0_world2 -0.465
+[2017.10.11-10.30.25:746][878]LogCharacterMovement: 2DSideScrollerCharacter_C_0 is stuck and failed to move! Velocity: X=17.07 Y=0.00 Z=0.00 Location: X=-540.33 Y=0.00 Z=74.16 Normal: X=0.00 Y=1.00 Z=-0.00 PenetrationDepth:45.000 Actor:MovingPlatformBP_146 Component:PaperSprite BoneName:None (0 other events since notify)
+[2017.10.11-10.30.30:780][482]LogBlueprintUserMessages: [TrapBP_75] true
+[2017.10.11-10.30.37:313][266]LogCharacterMovement: 2DSideScrollerCharacter_C_0 is stuck and failed to move! Velocity: X=-17.07 Y=0.00 Z=0.00 Location: X=-372.84 Y=0.00 Z=102.43 Normal: X=0.00 Y=1.00 Z=-0.00 PenetrationDepth:45.000 Actor:MovingPlatformBP_146 Component:PaperSprite BoneName:None (30 other events since notify)
+[2017.10.11-10.31.49:312][624]LogSavePackage: Save=46.94ms
+[2017.10.11-10.31.49:312][624]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/MovingPlatformBP3AA877A34DC45CA723E02CADB421CC6A.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/MovingPlatformBP.uasset'
+[2017.10.11-10.31.49:314][624]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/MovingPlatformBP.uasset
+[2017.10.11-10.32.10:187][ 68]LogSavePackage: Save=46.89ms
+[2017.10.11-10.32.10:187][ 68]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/MovingPlatformBP9139D6F547889C075CE41A98EE7E265B.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/MovingPlatformBP.uasset'
+[2017.10.11-10.32.10:188][ 68]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/MovingPlatformBP.uasset
+[2017.10.11-10.32.31:660][ 21]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 ../../../../../Users/m.hawari41/Documents/coinFX.wav)
+[2017.10.11-10.32.31:732][ 21]LogAudioDerivedData:Display: Building compressed audio format OGG wave coinFX...
+[2017.10.11-10.32.31:820][ 21]LogAudioDerivedData:Warning: Updated SoundWave->RawPCMDataSize during cooking SoundWave /Game/2DSideScrollerBP/Blueprints/coinFX.coinFX.
+[2017.10.11-10.33.27:245][114]LogSavePackage: Save=10.22ms
+[2017.10.11-10.33.27:245][114]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/cOINbpBC53CC4745DABAF51F6505B49DA0D341.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/cOINbp.uasset'
+[2017.10.11-10.33.27:247][114]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/cOINbp.uasset
+[2017.10.11-10.39.47:680][868]LogEditorTransaction: Undo Add Node
+[2017.10.11-10.40.53:091][239]LogSavePackage: Save=17.04ms
+[2017.10.11-10.40.53:091][239]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/cOINbp5B42B2F341EA2328CF9AAA82D7B07CFD.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/cOINbp.uasset'
+[2017.10.11-10.40.53:093][239]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/cOINbp.uasset
+[2017.10.11-10.41.55:781][778]LogSavePackage: Save=18.81ms
+[2017.10.11-10.41.55:781][778]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/cOINbp8DE2480F4BCF2A0A0A588EA325DA8F58.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/cOINbp.uasset'
+[2017.10.11-10.41.55:783][778]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/cOINbp.uasset
+[2017.10.11-10.42.20:498][364]LogEditorViewport: Clicking Background
+[2017.10.11-10.42.22:317][581]LogEditorViewport: Clicking on Actor (LMB): CoinBP_C (CoinBP)
+[2017.10.11-10.42.29:498][437]LogEditorViewport: Clicking Background
+[2017.10.11-10.42.34:152][994]LogTemp: Repeting last play command: Selected Viewport
+[2017.10.11-10.42.34:169][994]BlueprintLog: New page: Pre-Play auto-recompile
+[2017.10.11-10.42.34:169][994]LogPlayLevel: [PlayLevel] Compiling MovingPlatformBP before play...
+[2017.10.11-10.42.34:312][994]LogPlayLevel: [PlayLevel] Compiling CoinBP before play...
+[2017.10.11-10.42.34:470][994]LogPlayLevel: PlayLevel: Blueprint regeneration took 300 ms (2 blueprints)
+[2017.10.11-10.42.34:470][994]PIE: New page: PIE session: world2 (Oct 12, 2017, 12:42:34 AM)
+[2017.10.11-10.42.34:470][994]LogPlayLevel: Creating play world package: /Game/2DSideScrollerBP/UEDPIE_0_world2
+[2017.10.11-10.42.34:471][994]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001209s)
+[2017.10.11-10.42.34:472][994]LogAIModule: Creating AISystem for world world2
+[2017.10.11-10.42.34:472][994]LogPlayLevel: PIE: World Init took: (0.000653s)
+[2017.10.11-10.42.34:472][994]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/2DSideScrollerBP/world2.world2 to /Game/2DSideScrollerBP/UEDPIE_0_world2.world2 (0.002026s)
+[2017.10.11-10.42.34:499][994]LogInit: XAudio2 using 'ASUS VS197-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.10.11-10.42.34:503][994]LogInit: FAudioDevice initialized.
+[2017.10.11-10.42.34:533][994]LogLoad: Game class is 'MyGameMode_C'
+[2017.10.11-10.42.34:535][994]LogWorld: Bringing World /Game/2DSideScrollerBP/UEDPIE_0_world2.world2 up for play (max tick rate 0) at 2017.10.11-17.42.34
+[2017.10.11-10.42.34:536][994]LogWorld: Bringing up level for play took: 0.002705
+[2017.10.11-10.42.34:538][994]PIE: Info Play in editor start time for /Game/2DSideScrollerBP/UEDPIE_0_world2 -0.351
+[2017.10.11-10.42.53:959][538]LogSavePackage: Save=20.72ms
+[2017.10.11-10.42.53:959][538]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/cOINbpAAE8C6E745E78F3BCC1DE19BCDC8ACF7.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/cOINbp.uasset'
+[2017.10.11-10.42.53:961][538]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/cOINbp.uasset
+[2017.10.11-10.44.09:087][129]LogSavePackage: Save=11.16ms
+[2017.10.11-10.44.09:087][129]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/DoorBPB804FFDF4C1033E37CF4109669ADEE56.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/DoorBP.uasset'
+[2017.10.11-10.44.09:089][129]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/DoorBP.uasset
+[2017.10.11-10.45.06:813][797]LogSavePackage: Save=20.81ms
+[2017.10.11-10.45.06:813][797]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/world2_Auto4392222E6468C76A187FA75B9A4F675F2.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/Autosaves/Game/2DSideScrollerBP/world2_Auto4.umap'
+[2017.10.11-10.45.06:814][797]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/Autosaves/Game/2DSideScrollerBP/world2_Auto4.umap
+[2017.10.11-10.45.06:816][797]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/2DSideScrollerBP/world2' took 0.061
+[2017.10.11-10.45.06:816][797]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.061
+[2017.10.11-10.45.06:818][797]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/2DSideScrollerBP/Blueprints/coinFX] ([1] browsable assets)...
+[2017.10.11-10.45.06:824][797]OBJ SavePackage:     Rendered thumbnail for [SoundWave /Game/2DSideScrollerBP/Blueprints/coinFX.coinFX]
+[2017.10.11-10.45.06:824][797]OBJ SavePackage: Finished generating thumbnails for package [/Game/2DSideScrollerBP/Blueprints/coinFX]
+[2017.10.11-10.45.06:842][797]LogSavePackage: Save=16.54ms
+[2017.10.11-10.45.06:842][797]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/coinFX_Auto42A67F60446C122FEDC79AF88CBCFB11C.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/Autosaves/Game/2DSideScrollerBP/Blueprints/coinFX_Auto4.uasset'
+[2017.10.11-10.45.06:843][797]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/Autosaves/Game/2DSideScrollerBP/Blueprints/coinFX_Auto4.uasset
+[2017.10.11-10.45.06:843][797]LogFileHelpers: Auto-saving content packages took 0.026
+[2017.10.11-10.45.43:477][135]LogRenderer: Reallocating scene render targets to support 1084x608 NumSamples 1 (Frame:1).
+[2017.10.11-10.47.41:194][802]LogSavePackage: Save=15.04ms
+[2017.10.11-10.47.41:194][802]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/DoorBP398172234F4FCE45092DE1A2B4F2366F.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/DoorBP.uasset'
+[2017.10.11-10.47.41:196][802]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/DoorBP.uasset
+[2017.10.11-10.48.56:104][735]LogSavePackage: Save=12.23ms
+[2017.10.11-10.48.56:104][735]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/DoorBPF312A61340ABB6037F633DA52A3FFCFA.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/DoorBP.uasset'
+[2017.10.11-10.48.56:107][735]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/DoorBP.uasset
+[2017.10.11-10.49.17:893][507]BlueprintLog: New page: Compile DoorBP
+[2017.10.11-10.51.57:663][913]LogSavePackage: Save=18.96ms
+[2017.10.11-10.51.57:663][913]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/DoorBP92AD16624B7A14B13F06B6822587C516.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/DoorBP.uasset'
+[2017.10.11-10.51.57:665][913]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/DoorBP.uasset
+[2017.10.11-10.53.36:728][466]LogSavePackage: Save=23.02ms
+[2017.10.11-10.53.36:728][466]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/DoorBP89B386984D4FBF0933970D81B05A8878.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/DoorBP.uasset'
+[2017.10.11-10.53.36:730][466]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/DoorBP.uasset
+[2017.10.11-10.54.47:093][199]LogSavePackage: Save=23.89ms
+[2017.10.11-10.54.47:093][199]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/DoorBP717563444AFC66FFF07B149F6016445B.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/DoorBP.uasset'
+[2017.10.11-10.54.47:095][199]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/DoorBP.uasset
+[2017.10.11-10.55.05:593][338]LogSavePackage: Save=23.85ms
+[2017.10.11-10.55.05:593][338]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/DoorBP45CFA87147E848B30C429BBE0531216F.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/DoorBP.uasset'
+[2017.10.11-10.55.05:595][338]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/DoorBP.uasset
+[2017.10.11-10.56.12:432][908]LogEditorTransaction: Undo Rename Variable
+[2017.10.11-10.56.13:098][962]LogEditorTransaction: Undo Add Variable
+[2017.10.11-10.56.43:552][266]LogEditorTransaction: Undo Change Parameter Type
+[2017.10.11-10.56.43:555][266]LogClass:Warning: Type mismatch in 2DSideScrollerExampleMap of SKEL_DoorBP_C - Previous (StructProperty) Current(BoolProperty) for package:  FObjectReader
+[2017.10.11-10.56.44:007][301]LogEditorTransaction: Undo Rename Variable
+[2017.10.11-10.56.44:653][374]LogEditorTransaction: Undo Add Variable
+[2017.10.11-10.57.17:988][186]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/2DSideScrollerBP/world2' took 0.038
+[2017.10.11-10.57.17:989][186]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/2DSideScrollerBP/Blueprints/DoorBP] ([1] browsable assets)...
+[2017.10.11-10.57.17:989][186]OBJ SavePackage: Finished generating thumbnails for package [/Game/2DSideScrollerBP/Blueprints/DoorBP]
+[2017.10.11-10.57.18:019][186]LogSavePackage: Save=26.92ms
+[2017.10.11-10.57.18:019][186]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/DoorBP_Auto5B443EB1A45CDA92D40379E8F8EE143E7.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/Autosaves/Game/2DSideScrollerBP/Blueprints/DoorBP_Auto5.uasset'
+[2017.10.11-10.57.18:020][186]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/Autosaves/Game/2DSideScrollerBP/Blueprints/DoorBP_Auto5.uasset
+[2017.10.11-10.57.18:021][186]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/KenneyTemplate/Sprites/spritesheet-32x-trans_Sprite_180] ([1] browsable assets)...
+[2017.10.11-10.57.18:030][186]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/KenneyTemplate/Sprites/spritesheet-32x-trans_Sprite_180.spritesheet-32x-trans_Sprite_180]
+[2017.10.11-10.57.18:030][186]OBJ SavePackage: Finished generating thumbnails for package [/Game/KenneyTemplate/Sprites/spritesheet-32x-trans_Sprite_180]
+[2017.10.11-10.57.18:036][186]Warning: Asset '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/Autosaves/Game/KenneyTemplate/Sprites/spritesheet-32x-trans_Sprite_180_Auto5.uasset' cannot be saved as it has only been partially loaded
+[2017.10.11-10.58.01:660][721]LogClass:Warning: Type mismatch in 2DSideScrollerExampleMap of SKEL_DoorBP_C - Previous (StructProperty) Current(NameProperty) for package:  FObjectReader
+[2017.10.11-10.58.24:101][113]BlueprintLog: New page: Compile DoorBP
+[2017.10.11-10.58.28:159][453]LogSavePackage: Save=60.66ms
+[2017.10.11-10.58.28:159][453]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/DoorBPD658DEE44ACBFF5E55D0109A89CBA699.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/DoorBP.uasset'
+[2017.10.11-10.58.28:166][453]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/DoorBP.uasset
+[2017.10.11-11.01.02:849][133]LogSavePackage: Save=39.51ms
+[2017.10.11-11.01.02:849][133]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/DoorBP37EFA72741CA2229C88F14A69F3F097D.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/DoorBP.uasset'
+[2017.10.11-11.01.02:852][133]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/DoorBP.uasset
+[2017.10.11-11.01.23:664][606]LogSavePackage: Save=33.92ms
+[2017.10.11-11.01.23:664][606]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/DoorBP209DB1AE460ADF1933F60F810598390E.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/DoorBP.uasset'
+[2017.10.11-11.01.23:665][606]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/Blueprints/DoorBP.uasset
+[2017.10.11-11.01.24:914][745]BlueprintLog: New page: Compile DoorBP
+[2017.10.11-11.01.46:996][279]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2017.10.11-11.05.01:754][963]LogSavePackage: Save=115.51ms
+[2017.10.11-11.05.01:754][963]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/world2D2F06E63477A0396D464E7A0A01AD987.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/world2.umap'
+[2017.10.11-11.05.01:759][963]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/world2.umap
+[2017.10.11-11.05.01:780][963]LogFileHelpers: Saving map 'world2' took 0.219
+[2017.10.11-11.05.52:450][522]LogSavePackage: Save=118.39ms
+[2017.10.11-11.05.52:450][522]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/world22FD349034F3930AAC5A4239ABCBBDA84.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/world2.umap'
+[2017.10.11-11.05.52:453][522]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/world2.umap
+[2017.10.11-11.05.52:466][522]LogFileHelpers: Saving map 'world2' took 0.205
+[2017.10.11-11.06.24:884][389]LogSavePackage: Save=120.37ms
+[2017.10.11-11.06.24:884][389]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/world2136CB39745C4FEAE0C2DD384FDCAF96D.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/world2.umap'
+[2017.10.11-11.06.24:887][389]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/world2.umap
+[2017.10.11-11.06.24:898][389]LogFileHelpers: Saving map 'world2' took 0.204
+[2017.10.11-11.07.01:799][751]LogSavePackage: Save=121.71ms
+[2017.10.11-11.07.01:799][751]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/world2A549F43148EFD2EBEA07F68F666FC252.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/world2.umap'
+[2017.10.11-11.07.01:802][751]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/world2.umap
+[2017.10.11-11.07.01:814][751]LogFileHelpers: Saving map 'world2' took 0.204
+[2017.10.11-11.07.28:585][920]LogEditorViewport: Clicking Background
+[2017.10.11-11.07.30:554][155]LogEditorViewport: Clicking on Actor (LMB): DoorBP_C (DoorBP)
+[2017.10.11-11.07.40:725][367]LogEditorViewport: Clicking Background
+[2017.10.11-11.07.44:720][845]LogEditorViewport: Clicking on Actor (LMB): CoinBP_C (CoinBP)
+[2017.10.11-11.07.45:487][934]Cmd: EDIT COPY
+[2017.10.11-11.07.45:704][957]Cmd: EDIT PASTE
+[2017.10.11-11.07.51:760][657]LogSavePackage: Save=122.72ms
+[2017.10.11-11.07.51:760][657]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/world2DCDE3053418088199F8362B58DA45E72.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/world2.umap'
+[2017.10.11-11.07.51:763][657]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/world2.umap
+[2017.10.11-11.07.52:885][774]LogTemp: Repeting last play command: Selected Viewport
+[2017.10.11-11.07.52:900][774]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/2DSideScrollerBP/world2.world2:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerBP/world2.world2:PersistentLevel.world2' with GeneratedClass '/Game/2DSideScrollerBP/world2.world2_C' with ClassGeneratedBy '/Game/2DSideScrollerBP/world2.world2:PersistentLevel.world2'
+[2017.10.11-11.07.52:900][774]BlueprintLog: New page: Pre-Play auto-recompile
+[2017.10.11-11.07.52:900][774]LogPlayLevel: [PlayLevel] Compiling CoinBP before play...
+[2017.10.11-11.07.53:002][774]LogPlayLevel: PlayLevel: Blueprint regeneration took 102 ms (1 blueprints)
+[2017.10.11-11.07.53:002][774]PIE: New page: PIE session: world2 (Oct 12, 2017, 1:07:53 AM)
+[2017.10.11-11.07.53:002][774]LogPlayLevel: Creating play world package: /Game/2DSideScrollerBP/UEDPIE_0_world2
+[2017.10.11-11.07.53:004][774]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002031s)
+[2017.10.11-11.07.53:005][774]LogAIModule: Creating AISystem for world world2
+[2017.10.11-11.07.53:005][774]LogPlayLevel: PIE: World Init took: (0.000605s)
+[2017.10.11-11.07.53:005][774]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/2DSideScrollerBP/world2.world2 to /Game/2DSideScrollerBP/UEDPIE_0_world2.world2 (0.002804s)
+[2017.10.11-11.07.53:032][774]LogInit: XAudio2 using 'ASUS VS197-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.10.11-11.07.53:036][774]LogInit: FAudioDevice initialized.
+[2017.10.11-11.07.53:066][774]LogLoad: Game class is 'MyGameMode_C'
+[2017.10.11-11.07.53:068][774]LogWorld: Bringing World /Game/2DSideScrollerBP/UEDPIE_0_world2.world2 up for play (max tick rate 0) at 2017.10.11-18.07.53
+[2017.10.11-11.07.53:069][774]LogWorld: Bringing up level for play took: 0.002744
+[2017.10.11-11.07.53:071][774]PIE: Info Play in editor start time for /Game/2DSideScrollerBP/UEDPIE_0_world2 0.197
+[2017.10.11-11.07.53:071][774]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/2DSideScrollerBP/world2.world2:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerBP/world2.world2:PersistentLevel.world2' with GeneratedClass '/Game/2DSideScrollerBP/world2.world2_C' with ClassGeneratedBy '/Game/2DSideScrollerBP/world2.world2:PersistentLevel.world2'
+[2017.10.11-11.07.53:891][872]LogBlueprintUserMessages: [world2_C_0] 2
+[2017.10.11-11.07.54:891][992]LogBlueprintUserMessages: [world2_C_0] 2
+[2017.10.11-11.07.55:891][112]LogBlueprintUserMessages: [world2_C_0] 2
+[2017.10.11-11.07.56:891][232]LogBlueprintUserMessages: [world2_C_0] 1
+[2017.10.11-11.07.57:891][352]LogBlueprintUserMessages: [world2_C_0] 0
+[2017.10.11-11.07.58:891][472]LogBlueprintUserMessages: [world2_C_0] 0
+[2017.10.11-11.07.59:891][592]LogBlueprintUserMessages: [world2_C_0] 0
+[2017.10.11-11.08.00:891][712]LogBlueprintUserMessages: [world2_C_0] 0
+[2017.10.11-11.08.01:891][832]LogBlueprintUserMessages: [world2_C_0] 0
+[2017.10.11-11.08.02:892][952]LogBlueprintUserMessages: [world2_C_0] 0
+[2017.10.11-11.08.03:892][ 72]LogBlueprintUserMessages: [world2_C_0] 0
+[2017.10.11-11.08.04:892][192]LogBlueprintUserMessages: [world2_C_0] 0
+[2017.10.11-11.08.05:892][312]LogBlueprintUserMessages: [world2_C_0] 0
+[2017.10.11-11.08.05:942][318]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/2DSideScrollerBP/world2.world2:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerBP/world2.world2:PersistentLevel.world2' with GeneratedClass '/Game/2DSideScrollerBP/world2.world2_C' with ClassGeneratedBy '/Game/2DSideScrollerBP/world2.world2:PersistentLevel.world2'
+[2017.10.11-11.08.05:977][318]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/2DSideScrollerBP/world2.world2:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerBP/world2.world2:PersistentLevel.world2' with GeneratedClass '/Game/2DSideScrollerBP/world2.world2_C' with ClassGeneratedBy '/Game/2DSideScrollerBP/world2.world2:PersistentLevel.world2'
+[2017.10.11-11.08.06:714][401]LogTemp: Repeting last play command: Selected Viewport
+[2017.10.11-11.08.06:725][401]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/2DSideScrollerBP/world2.world2:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerBP/world2.world2:PersistentLevel.world2' with GeneratedClass '/Game/2DSideScrollerBP/world2.world2_C' with ClassGeneratedBy '/Game/2DSideScrollerBP/world2.world2:PersistentLevel.world2'
+[2017.10.11-11.08.06:725][401]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.10.11-11.08.06:726][401]PIE: New page: PIE session: world2 (Oct 12, 2017, 1:08:06 AM)
+[2017.10.11-11.08.06:726][401]LogPlayLevel: Creating play world package: /Game/2DSideScrollerBP/UEDPIE_0_world2
+[2017.10.11-11.08.06:728][401]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002049s)
+[2017.10.11-11.08.06:728][401]LogAIModule: Creating AISystem for world world2
+[2017.10.11-11.08.06:728][401]LogPlayLevel: PIE: World Init took: (0.000535s)
+[2017.10.11-11.08.06:728][401]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/2DSideScrollerBP/world2.world2 to /Game/2DSideScrollerBP/UEDPIE_0_world2.world2 (0.002755s)
+[2017.10.11-11.08.06:756][401]LogInit: XAudio2 using 'ASUS VS197-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.10.11-11.08.06:760][401]LogInit: FAudioDevice initialized.
+[2017.10.11-11.08.06:790][401]LogLoad: Game class is 'MyGameMode_C'
+[2017.10.11-11.08.06:792][401]LogWorld: Bringing World /Game/2DSideScrollerBP/UEDPIE_0_world2.world2 up for play (max tick rate 0) at 2017.10.11-18.08.06
+[2017.10.11-11.08.06:794][401]LogWorld: Bringing up level for play took: 0.002657
+[2017.10.11-11.08.06:795][401]PIE: Info Play in editor start time for /Game/2DSideScrollerBP/UEDPIE_0_world2 -0.079
+[2017.10.11-11.08.06:795][401]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/2DSideScrollerBP/world2.world2:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerBP/world2.world2:PersistentLevel.world2' with GeneratedClass '/Game/2DSideScrollerBP/world2.world2_C' with ClassGeneratedBy '/Game/2DSideScrollerBP/world2.world2:PersistentLevel.world2'
+[2017.10.11-11.08.07:715][511]LogBlueprintUserMessages: [world2_C_0] 2
+[2017.10.11-11.08.08:715][631]LogBlueprintUserMessages: [world2_C_0] 2
+[2017.10.11-11.08.09:715][751]LogBlueprintUserMessages: [world2_C_0] 1
+[2017.10.11-11.08.10:715][871]LogBlueprintUserMessages: [world2_C_0] 0
+[2017.10.11-11.08.11:715][991]LogBlueprintUserMessages: [world2_C_0] 0
+[2017.10.11-11.08.12:557][ 92]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/2DSideScrollerBP/world2.world2:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerBP/world2.world2:PersistentLevel.world2' with GeneratedClass '/Game/2DSideScrollerBP/world2.world2_C' with ClassGeneratedBy '/Game/2DSideScrollerBP/world2.world2:PersistentLevel.world2'
+[2017.10.11-11.08.12:592][ 92]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/2DSideScrollerBP/world2.world2:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerBP/world2.world2:PersistentLevel.world2' with GeneratedClass '/Game/2DSideScrollerBP/world2.world2_C' with ClassGeneratedBy '/Game/2DSideScrollerBP/world2.world2:PersistentLevel.world2'
+[2017.10.11-11.08.13:611][209]LogTemp: Repeting last play command: Selected Viewport
+[2017.10.11-11.08.13:621][209]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/2DSideScrollerBP/world2.world2:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerBP/world2.world2:PersistentLevel.world2' with GeneratedClass '/Game/2DSideScrollerBP/world2.world2_C' with ClassGeneratedBy '/Game/2DSideScrollerBP/world2.world2:PersistentLevel.world2'
+[2017.10.11-11.08.13:621][209]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.10.11-11.08.13:622][209]PIE: New page: PIE session: world2 (Oct 12, 2017, 1:08:13 AM)
+[2017.10.11-11.08.13:622][209]LogPlayLevel: Creating play world package: /Game/2DSideScrollerBP/UEDPIE_0_world2
+[2017.10.11-11.08.13:624][209]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001874s)
+[2017.10.11-11.08.13:624][209]LogAIModule: Creating AISystem for world world2
+[2017.10.11-11.08.13:624][209]LogPlayLevel: PIE: World Init took: (0.000510s)
+[2017.10.11-11.08.13:624][209]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/2DSideScrollerBP/world2.world2 to /Game/2DSideScrollerBP/UEDPIE_0_world2.world2 (0.002550s)
+[2017.10.11-11.08.13:651][209]LogInit: XAudio2 using 'ASUS VS197-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.10.11-11.08.13:655][209]LogInit: FAudioDevice initialized.
+[2017.10.11-11.08.13:685][209]LogLoad: Game class is 'MyGameMode_C'
+[2017.10.11-11.08.13:687][209]LogWorld: Bringing World /Game/2DSideScrollerBP/UEDPIE_0_world2.world2 up for play (max tick rate 0) at 2017.10.11-18.08.13
+[2017.10.11-11.08.13:688][209]LogWorld: Bringing up level for play took: 0.002668
+[2017.10.11-11.08.13:690][209]PIE: Info Play in editor start time for /Game/2DSideScrollerBP/UEDPIE_0_world2 0.816
+[2017.10.11-11.08.13:690][209]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/2DSideScrollerBP/world2.world2:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerBP/world2.world2:PersistentLevel.world2' with GeneratedClass '/Game/2DSideScrollerBP/world2.world2_C' with ClassGeneratedBy '/Game/2DSideScrollerBP/world2.world2:PersistentLevel.world2'
+[2017.10.11-11.08.14:618][320]LogBlueprintUserMessages: [world2_C_0] 2
+[2017.10.11-11.08.15:618][440]LogBlueprintUserMessages: [world2_C_0] 2
+[2017.10.11-11.08.16:618][560]LogBlueprintUserMessages: [world2_C_0] 2
+[2017.10.11-11.08.17:618][680]LogBlueprintUserMessages: [world2_C_0] 2
+[2017.10.11-11.08.18:618][800]LogBlueprintUserMessages: [world2_C_0] 2
+[2017.10.11-11.08.19:619][920]LogBlueprintUserMessages: [world2_C_0] 2
+[2017.10.11-11.08.20:619][ 40]LogBlueprintUserMessages: [world2_C_0] 1
+[2017.10.11-11.08.21:619][160]LogBlueprintUserMessages: [world2_C_0] 1
+[2017.10.11-11.08.22:619][280]LogBlueprintUserMessages: [world2_C_0] 1
+[2017.10.11-11.08.23:619][400]LogBlueprintUserMessages: [world2_C_0] 1
+[2017.10.11-11.08.24:619][520]LogBlueprintUserMessages: [world2_C_0] 1
+[2017.10.11-11.08.25:619][640]LogBlueprintUserMessages: [world2_C_0] 1
+[2017.10.11-11.08.26:619][760]LogBlueprintUserMessages: [world2_C_0] 0
+[2017.10.11-11.08.27:619][880]LogBlueprintUserMessages: [world2_C_0] 0
+[2017.10.11-11.08.28:619][  0]LogBlueprintUserMessages: [world2_C_0] 0
+[2017.10.11-11.08.29:578][115]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/2DSideScrollerBP/world2.world2:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerBP/world2.world2:PersistentLevel.world2' with GeneratedClass '/Game/2DSideScrollerBP/world2.world2_C' with ClassGeneratedBy '/Game/2DSideScrollerBP/world2.world2:PersistentLevel.world2'
+[2017.10.11-11.08.29:615][115]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/2DSideScrollerBP/world2.world2:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerBP/world2.world2:PersistentLevel.world2' with GeneratedClass '/Game/2DSideScrollerBP/world2.world2_C' with ClassGeneratedBy '/Game/2DSideScrollerBP/world2.world2:PersistentLevel.world2'
+[2017.10.11-11.08.31:131][272]LogSavePackage: Save=122.50ms
+[2017.10.11-11.08.31:131][272]LogSavePackage: Moving '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Saved/world2AAA8CC2140410D617928D1BC9412C268.tmp' to '../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/world2.umap'
+[2017.10.11-11.08.31:133][272]LogSavePackage:Display: Finished SavePackage ../../../../../Users/m.hawari41/Documents/Unreal Projects/Gamedev-Tutorial2/Gamedev-Tutorial2-master 4.16/Content/2DSideScrollerBP/world2.umap
